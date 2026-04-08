@@ -1,4 +1,7 @@
-(define c (second (string-split (call-trick `corn "list") "\n" #:repeat? #t)))
+(define l (string-split (call-trick `corn "list") "\n" #:repeat? #t))
+(define ll (- (length l) 1))
+(define li (+ (random ll) 1))
+(define c (list-ref l li))
 (define n (- (string-length c) 3))
 (define f (substring c 5 n))
 
