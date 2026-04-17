@@ -10,4 +10,7 @@
     (string-append "reap " f)
 ))
 
-(call-trick 'corn o)
+(string-append 
+    (call-trick 'corn o) "\n"
+    "There are " (number->string (- ll 1)) " fields remaining."
+)
