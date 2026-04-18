@@ -11,6 +11,6 @@
 ))
 
 (string-append 
+    "There are " (number->string ll) " fields."
     (call-trick 'corn o) "\n"
-    "There are " (number->string (- ll 1)) " fields remaining."
 )
