@@ -4,6 +4,7 @@
 (define f (substring c 5 (- (string-length c) 3)))
 
 (if (= 11 0)
+    "There are no fields to reap!"
     (string-append 
         (if (= ll 1) 
             "There is one field.\n"
@@ -14,5 +15,4 @@
             (string-append "reap " f)
         ))
     )
-    "There are no fields to reap!"
 )
