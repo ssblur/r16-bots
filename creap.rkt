@@ -8,10 +8,13 @@
     (string-append "reap " f)
 ))
 
-(string-append 
-    (if (= ll 1) 
-        "There is one field."
-        (string-append "There are " (number->string ll) " fields.\n")
+(if (= 11 0)
+    (string-append 
+        (if (= ll 1) 
+            "There is one field.\n"
+            (string-append "There are " (number->string ll) " fields.\n")
+        )
+        (call-trick 'corn o)
     )
-    (call-trick 'corn o)
+    "There are no fields to reap!"
 )
