@@ -3,7 +3,7 @@
 (define c (list-ref l (+ (random ll) 1)))
 (define f (substring c 5 (- (string-length c) 3)))
 
-(if (= 11 0)
+(if (= ll 0)
     "There are no fields to reap!"
     (string-append 
         (if (= ll 1) 
