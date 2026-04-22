@@ -3,18 +3,16 @@
 (define c (list-ref l (+ (random ll) 1)))
 (define f (substring c 5 (- (string-length c) 3)))
 
-(define o (if (string-contains? f " ")
-    (string-append "reap \"" f "\"")
-    (string-append "reap " f)
-))
-
 (if (= 11 0)
     (string-append 
         (if (= ll 1) 
             "There is one field.\n"
             (string-append "There are " (number->string ll) " fields.\n")
         )
-        (call-trick 'corn o)
+        (call-trick 'corn (if (string-contains? f " ")
+            (string-append "reap \"" f "\"")
+            (string-append "reap " f)
+        ))
     )
     "There are no fields to reap!"
 )
