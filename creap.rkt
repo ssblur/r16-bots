@@ -4,7 +4,7 @@
 
 (define (reap field)
     (define res (call-trick 'corn (string-append "reap " field)))
-    (if (string-contains? res "doesn't exist!")
+    (if (or (string-suffix? res "doesn't exist!") (string-suffix? res "halve your cooldown!"))
         (call-trick 'corn (string-append "reap \"" field "\""))
         res
     )
