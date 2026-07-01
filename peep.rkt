@@ -1,3 +1,12 @@
+(if (and 
+    parent-context 
+    (hash-ref parent-context 'parent-context)
+    (equal? (hash-ref (hash-ref parent-context 'parent-context) 'trick-name #f) "poop")
+  )
+  (exit "banned")
+  #f
+)
+
 (define storage (or (read-storage 'guild) (list) ))
 
 (define (add-peep) (if (write-storage 'guild (cons string-args storage)) "Peep added!" "Could not add Peep."))
