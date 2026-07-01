@@ -1,7 +1,7 @@
 (if (and 
     parent-context 
     (hash-ref parent-context 'parent-context)
-    (equal? (hash-ref (hash-ref parent-context 'parent-context) 'trick-name #f) "poop")
+    (string-contains? (hash-ref (hash-ref parent-context 'parent-context) 'trick-name "") "poop")
   )
   (exit "banned")
   #f
