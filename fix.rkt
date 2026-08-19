@@ -1,11 +1,12 @@
 (define fixes
   (list
-    (cons "x.com" "girlcockx.com")
+    (cons "x.com" "fxtwitter.com")
     (cons "bsky.app" "vxbsky.app")
-    (cons "twitter.com" "stupidpenisx.com")
+    (cons "twitter.com" "fxtwitter.com")
     (cons "tumblr.com" "tpmblr.com")
-    (cons "reddit.com" "vxreddit.com")
+    (cons "reddit.com" "rxddit.com")
     (cons "tiktok.com" "tfxktok.com")
+    (cons "instagram.com" "kkinstagram.com")
   )
 )
 
